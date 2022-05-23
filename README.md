@@ -66,7 +66,7 @@ If using a device with GPIO a simple relay can be connected to this.
 
 [Gong Backend][gong-backend]
 
-[Gong Client][gong-client]
+[Gong Frontend][gong-frontend]
 
 [gong-backend]: https://github.com/Dhamma-Sobhana/gong-backend
 
