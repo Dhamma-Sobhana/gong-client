@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
+    "start-nodemon": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "mqtt": "^4.3.4",
+    "nodemon": "^2.0.16",
     "play-sound": "^1.1.5"
   }
 }
