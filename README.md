@@ -2,7 +2,7 @@
 
 A node service for playing gong when told by [Gong Backend][gong-backend].
 
-Planned to be deployed on Raspberry Pis using (balenaCloud)[https://www.balena.io/cloud/].
+Planned to be deployed on Raspberry Pi's using [balenaCloud](https://www.balena.io/cloud/).
 
 # Dependencies
 
@@ -12,16 +12,31 @@ Planned to be deployed on Raspberry Pis using (balenaCloud)[https://www.balena.i
 
 # Developement
 
-  npm install
-  npm run start-nodemon
+    npm install
+    npm run start-nodemon
 
 # Configuration
-Set environment varibles
+Configure by setting environment variables:
 
-NAME: Name of instance (male_house, dhamma_hall, kitchen, ...). Used to identify device. Default: First found mac address
-AREAS: Areas this client handles. Separate multiple with ',' (0 (all), 1-16). Default: 0
-MQTT_SERVER: IP or hostname of MQTT server. Default: localhost
-TZ: Timezone of device. For correct logging of time. Default: Europe/Stockholm
+## NAME
+Name of instance (male_house, dhamma_hall, kitchen, ...). Used to identify device.
+
+Default: First found mac address
+
+## AREAS
+Areas this client handles. Separate multiple with ',' (0 (all), 1-16).
+
+Default: 0
+
+## MQTT_SERVER
+IP or hostname of MQTT server.
+
+Default: localhost
+
+## TZ
+Timezone of device. For correct logging of time.
+
+Default: Europe/Stockholm
 
 # Communication
 
