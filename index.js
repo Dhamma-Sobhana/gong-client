@@ -70,11 +70,14 @@ function playGong(affectedAreas) {
 }
 
 /**
- * Return new array containing all areas both handled and requested
+ * Return new array containing all areas both handled and requested or [0] if included in request
  * @param {Array} requestedAreas 
- * @returns Array of intersection of areas
+ * @returns Array of intersection of areas or [0]
  */
 function getAffectedAreas(requestedAreas) {
+  if (requestedAreas.includes(0))
+    return [0]
+  
   return areas.filter(x => requestedAreas.includes(x))
 }
 
