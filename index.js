@@ -132,4 +132,4 @@ client.on('message', function (topic, message) {
 })
 
 let time = formatDateTime(new Date().getTime())
-console.log(`Gong client starting.\n\nName: ${name}\nAreas: ${areas}\nTime: ${time}\n\nConnecting to MQTT server..`)
+console.log(`Gong client starting.\n\nName: ${name}\nAreas: ${areas}\nTime: ${time}\nServer: ${server}\n\nConnecting to MQTT server..`)
