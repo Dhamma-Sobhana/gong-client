@@ -105,6 +105,12 @@ client.on('message', function (topic, message) {
   } else if (topic == 'play') {
     let now = new Date().getTime()
     const affectedAreas = getAffectedAreas(data.areas)
+
+    if (affectedAreas.length === 0) {
+      console.log('Area not handled by this device')
+      return
+    }
+
     // Schedule play next change of second
     let future = parseInt(now / 1000) * 1000 + 1000
     let delay = future - now
