@@ -53,6 +53,7 @@ client.on('connect', function () {
  */
 function playGong(affectedAreas) {
   // TODO: Turn GPIO on or off
+  console.log('Playing')
   player.play('sound/static_sound_gong_gong-x2.mp3', function(err) {
     if (err) {
       console.error(err)
@@ -64,6 +65,7 @@ function playGong(affectedAreas) {
         "timestamp-millis": now,
         "timestamp": formatDateTime(now),
       }
+      console.log(`Play finished at ${formatDateTime(now)}`)
       client.publish(`played`, JSON.stringify(payload));
     }
   })
